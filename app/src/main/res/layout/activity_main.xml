@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1135dp"
+        android:layout_height="511dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bckgrnd" />
+
+    <TextView
+        android:id="@+id/txtEnemy_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="NaN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtEnemy_hp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNextTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="First Turn (1)"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPlayer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="NaN"
+        app:layout_constraintEnd_toStartOf="@+id/txtEnemy_name"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPlayer_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="NaN"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary_dark"
+        app:layout_constraintEnd_toEndOf="@+id/txtPlayer_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtPlayer_name"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayer_name" />
+
+    <TextView
+        android:id="@+id/txtPlayerDPT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="NaN ~ NaN"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtPlayer_hp"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/txtPlayer_hp"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayer_hp" />
+
+    <TextView
+        android:id="@+id/txtEnemyDPT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="NaN ~ NaN"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtEnemy_hp"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="@+id/txtEnemy_hp"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnemy_hp" />
+
+    <TextView
+        android:id="@+id/txtEnemy_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="NaN"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnemy_name" />
+
+    <TextView
+        android:id="@+id/txtTurnLog"
+        android:layout_width="356dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="156dp"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="86dp"
+        android:layout_height="90dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtEnemy_name"
+        app:layout_constraintStart_toStartOf="@+id/txtEnemy_name"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnemy_name"
+        app:srcCompat="@drawable/bron" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="103dp"
+        android:layout_height="84dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPlayer_name"
+        app:layout_constraintStart_toStartOf="@+id/txtPlayer_name"
+        app:layout_constraintTop_toBottomOf="@+id/txtPlayer_name"
+        app:srcCompat="@drawable/sprek" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
